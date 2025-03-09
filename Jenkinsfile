@@ -25,6 +25,7 @@ pipeline {
         }
 
         stage('Test') {
+            steps {
 
                 sh '''
                 
@@ -32,6 +33,7 @@ pipeline {
                 npm test -a
 
                 '''
+            }
 
         }
         
