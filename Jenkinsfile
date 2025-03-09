@@ -29,7 +29,7 @@ pipeline {
 
                 sh '''
                 
-                grep index.html build
+                grep "index.html" build
                 npm test -a
 
                 '''
