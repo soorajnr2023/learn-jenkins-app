@@ -25,11 +25,11 @@ pipeline {
         }
 
         stage('Test') {
-            // agent {
-            //     docker {
-            //         image 'node:npm-18:alpine'
-            //     }
-            // }
+            agent {
+                docker {
+                    image 'node:npm-18:alpine'
+                }
+            }
             steps {
 
                 sh '''
